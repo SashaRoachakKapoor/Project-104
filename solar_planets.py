@@ -1,0 +1,13 @@
+import cv2
+img = cv2.imread('solar_system_planets.jpg')
+cv2.putText(img, 'Sun', (20,50), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Mercury', (200,350), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Venus', (300,350), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Earth', (400,350), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Mars', (500,350), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Jupiter', (600,300), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Saturn', (750,300), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Uranus', (900,300), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.putText(img, 'Neptune', (950,350), cv2.FONT_HERSHEY_DUPLEX,0.75,(255,255,255))
+cv2.imshow('Solar System Planets with labels and the Sun', img)
+cv2.waitKey(0)
